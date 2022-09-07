@@ -1,4 +1,5 @@
 # SpringBoot_PostgreSQL_CRUD_RESTAPI
+
 Users Managment CRUD Operations using SpringBoot &amp; PostgreSQL
 
 ## Tools & Library used
@@ -12,14 +13,19 @@ Users Managment CRUD Operations using SpringBoot &amp; PostgreSQL
 
 ## Running the application locally
 
-1. Build the project using
-  `mvn clean install`
-2. Run using 
-  `mvn spring-boot:run`
+1. Config DB postgres Local
 
-## Deploying the application to Tomcat Server
+Change in resources/application.properties
+spring.datasource.url = YOUR_DB_POSTGRES_URL
 
-1. Build the project using
-  `mvn clean install`
-2. Rename the war/jar file
-3. Deploy that file to server & restart the server.
+2. Build the project using
+   `mvn clean install`
+
+3. Run using
+   `mvn spring-boot:run`
+
+4.See Swagger Doc API
+
+url = http://localhost:3000/api/swagger-ui/index.html
+
+Enjoy
